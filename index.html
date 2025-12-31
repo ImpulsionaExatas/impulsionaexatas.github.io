@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Links</title>
+    <style>
+        /* Reset básico e Fontes */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #111; /* Cor de fundo escura */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        /* Container Principal */
+        .container {
+            width: 100%;
+            max-width: 400px; /* Limita a largura para parecer um app */
+            text-align: center;
+        }
+
+        /* Foto de Perfil */
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%; /* Deixa a foto redonda */
+            object-fit: cover;
+            border: 3px solid #00d26a; /* Cor da borda da foto */
+            margin-bottom: 15px;
+        }
+
+        .username {
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            color: #888;
+        }
+
+        /* Botões de Links */
+        .link-btn {
+            display: block;
+            width: 100%;
+            background-color: #222;
+            color: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 1px solid #333;
+        }
+
+        /* Efeito ao passar o mouse */
+        .link-btn:hover {
+            background-color: #00d26a; /* Cor de destaque */
+            color: #000;
+            transform: scale(1.02);
+        }
+
+        /* Rodapé */
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="https://github.com/github.png" alt="Foto de Perfil" class="profile-pic">
+
+        <h1>Seu Nome</h1>
+        <p class="username">@seuinstagram</p>
+        <p class="bio">Ajudo empresas a venderem mais | Marketing Digital</p>
+
+        <a href="https://wa.me/seunumero" class="link-btn" target="_blank">
+            Fale comigo no WhatsApp
+        </a>
+
+        <a href="https://youtube.com/seucanal" class="link-btn" target="_blank">
+            Inscreva-se no YouTube
+        </a>
+
+        <a href="https://seusite.com" class="link-btn" target="_blank">
+            Visite meu Site
+        </a>
+
+        <footer>
+            Feito com HTML & CSS
+        </footer>
+    </div>
+
+</body>
+</html>
